@@ -9,6 +9,11 @@ class Route
         $post = Request::isPost();
 
         $defaultclass = 'App\\Controllers\\Page';
+
+        if (strpos($requestpath, '?ref')) {
+            $path = explode('?', $requestpath);
+            return call_user_func([new $defaultclass, 'default'], $path[1]);
+        }
         
         if ($requestpath !== '/') {
             $patharray = explode('/', $requestpath);
@@ -40,11 +45,11 @@ class Route
 
         if ($requestpath === '') {
             Response::code(200);
-            return call_user_func([new $defaultclass, 'default']);
+            return call_user_func([new $defaultclass, 'default'], '');
         }
         
         $requestpath = '/';
         Response::code(200);
-        return call_user_func([new $defaultclass, 'default']);
+        return call_user_func([new $defaultclass, 'default'], '');
     }
 }

@@ -12,21 +12,16 @@ define('APP_URL', 'http://xinotex.test/');
 define('ASSETS', APP_URL.'assets/');
 define('HOME', '/');
 define('ABOUT', '/page/about');
-define("PAPER", "/page/whitepaper");
-define("PLANS", "/page/plans");
-define("WAPSPEED", "/page/wapspeed");
-define("TEAM", "/page/team");
-define("APP", "/page/app");
 define("WHY_US", "/page/whyus");
 define("CONTACT", "/page/contact");
 define('SIGNUP', '/user/create');
+define("REGISTER", "/user/store");
 define('SIGNIN', '/user/signin');
+define("AUTH", "/user/auth");
 define('FORGOT_PASSWORD', '/user/forgotpassword');
 define('RESET_PASSWORD', '/user/resetpassword');
 define('PROFILE', '/user/profile');
 define('DASHBOARD', '/user/dashboard');
-
-define('WHITE_PAPER', APP_URL.'App/Views/tridex_white_paper_');
 
 define('REFERRALS', '/user/referrals');
 define('ACTIVE_MEMBERS', '/user/activemembers');

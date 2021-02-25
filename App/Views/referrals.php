@@ -10,7 +10,7 @@ $sn = 1;
 <div class="row">
     <div class="col-lg-10">
         <div class="form-group">
-            <input type="text" id="reflink" class="form-control" value="<?= APP_URL.ltrim(SIGNUP, '/').'/'.User::ref($_SESSION['email']) ?>">
+            <input type="text" id="reflink" class="form-control" value="<?= APP_URL.'?ref='.User::ref($_SESSION['email']); ?>">
         </div>
     </div>
     <div class="col-lg-2">

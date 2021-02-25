@@ -7,7 +7,7 @@ class Database
 {
     public static function open()
     {
-        $con = new mysqli('localhost', 'root', '', 'hynet');
+        $con = new mysqli('localhost', 'root', '', 'xinotex');
 
         if (!$con) {
             return "Error connecting to database, please contact sysadmin ".$con->error;

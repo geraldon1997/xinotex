@@ -70,8 +70,8 @@ class User extends Controller
         $createuser = ModelsUser::insert(ModelsUser::$table, $values);
 
         if ($createuser) {
-            if (isset($_POST['referrer'])) {
-                $referrer = $_POST['referrer'];
+            if (isset($_SESSION['referrer'])) {
+                $referrer = $_SESSION['referrer'];
                 $referrerid = ModelsUser::find(ModelsUser::$table, 'ref', $referrer)[0]['id'];
                 $referredid = ModelsUser::userid($email)[0]['id'];
 
@@ -79,6 +79,7 @@ class User extends Controller
                     'referrer' => $referrerid,
                     'referred' => $referredid
                     ]);
+                    unset($_SESSION['referrer']);
             }
             
 
@@ -219,25 +220,6 @@ class User extends Controller
             return "ms";
         }
 
-        $login_code = $this->generateToken($this->permitted_chars, 8);
-        $login_code_expiry = time() + (60 * 5);
-
-        if (!$auth[0]['is_logged_in']) {
-            $generate_login_code = Auth::update(Auth::$table, "login_code = '$login_code', login_code_expiry = '$login_code_expiry' ", "user_id", $details[0]['id']);
-
-            if (!$generate_login_code) {
-                return "lcni";
-            }
-    
-            $send_login_code = $this->sendlogincode($email, $login_code);
-    
-            if (!$send_login_code) {
-                $this->sendlogincode($email, $login_code);
-                return "lcns";
-            }
-            $_SESSION['email'] = $email;
-            return "lcs";
-        }
         $_SESSION['email'] = $email;
         return "usli";
     }

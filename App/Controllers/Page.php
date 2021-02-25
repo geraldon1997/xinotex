@@ -6,8 +6,13 @@ use App\Core\Migration;
 
 class Page extends Controller
 {
-    public function default()
+    public function default($params)
     {
+        if (!empty($params)) {
+            $arr = explode('=', $params);
+            $_SESSION['referrer'] = $arr[1];
+        }
+
         return $this->view('home');
     }
 
