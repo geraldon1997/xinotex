@@ -52,7 +52,7 @@
 				<div class="header-menu">
 					<ul class="nav">
 						<li class="nav-item">
-							<a class="nav-link" href="#">Homepage</a>
+							<a class="nav-link" href="<?= APP_URL; ?>">Homepage</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#">About</a>
