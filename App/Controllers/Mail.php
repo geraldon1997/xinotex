@@ -8,9 +8,9 @@ use PHPMailer\PHPMailer\PHPMailer;
 
 class Mail extends Controller
 {
-    public $senderemail = "noreply@tridexlimited.com";
+    public $senderemail = "support@xinotex.com";
     public $sendername = APP_NAME;
-    public $replytoemail = "noreply@tridexlimited.com";
+    public $replytoemail = "support@xinotex.com";
     public $replytoname = APP_NAME;
     public $subject;
     public $body;
@@ -25,10 +25,10 @@ class Mail extends Controller
             //Server settings
             $this->phpmailer->SMTPDebug = SMTP::DEBUG_OFF;                      // Enable verbose debug output
             $this->phpmailer->isSMTP();                                            // Send using SMTP
-            $this->phpmailer->Host       = 'mail.hynetcapital.com';                    // Set the SMTP server to send through
+            $this->phpmailer->Host       = 'xinotex.com';                    // Set the SMTP server to send through
             $this->phpmailer->SMTPAuth   = true;                                   // Enable SMTP authentication
-            $this->phpmailer->Username   = 'noreply@hynetcapital.com';                     // SMTP username
-            $this->phpmailer->Password   = '!@#$%Odogwu';                               // SMTP password
+            $this->phpmailer->Username   = 'support@xinotex.com';                     // SMTP username
+            $this->phpmailer->Password   = 'Xino@2021';                               // SMTP password
             $this->phpmailer->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` encouraged
             $this->phpmailer->Port       = 465;                                    // TCP port to connect to, use 465 for `PHPMailer::ENCRYPTION_SMTPS` above
         
