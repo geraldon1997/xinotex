@@ -8,7 +8,7 @@
 							<div class="col-12 col-sm-10 offset-sm-1">
 								<h6 class="uppercase font-weight-light letter-spacing-1 margin-bottom-20 text-white">Risk Managed Investment</h6>
 								<h1 class="font-weight-bold uppercase letter-spacing-1">Professionally Managed Growth</h1>
-								<a class="button button-xl button-radius button-outline-white margin-top-20 button-font-2" href="#">Register</a>
+								<a class="button button-xl button-radius button-outline-white margin-top-20 button-font-2" href="<?= SIGNUP; ?>">Register</a>
 							</div>
 						</div><!-- end row -->
 					</div><!-- end container -->
@@ -22,7 +22,7 @@
 							<div class="col-12 col-sm-10 offset-sm-1">
 								<h6 class="uppercase font-weight-light letter-spacing-1 margin-bottom-20 text-white">Amplified Focus on Investor Success</h6>
 								<h1 class="font-weight-bold uppercase letter-spacing-1">High Investment Volatility</h1>
-								<a class="button button-xl button-radius button-outline-white margin-top-20 button-font-2" href="#">Register</a>
+								<a class="button button-xl button-radius button-outline-white margin-top-20 button-font-2" href="<?= SIGNUP; ?>">Register</a>
 							</div>
 						</div><!-- end row -->
 					</div><!-- end container -->

@@ -10,8 +10,8 @@
 						</div>
 						<div class="accordion-content" style="max-height: 87px;">
 							<p>
-								We're a premier asset investment management firm, focused on delivering unique insight and partnership for the most sophisticated global investors.	
-								We are registered and regulated in Finland.
+								We are <b><?= APP_NAME; ?></b>, an investment management firm, focused on delivering unique insight and partnership for the most sophisticated global investors.	
+								We are registered and regulated in Australia.
 							</p>
 						</div>
 					</li>

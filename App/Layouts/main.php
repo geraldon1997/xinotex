@@ -114,8 +114,20 @@
 							<h6 class="font-small font-weight-normal uppercase">Useful Links</h6>
 							<ul class="list-dash">
 								<li><a href="<?= ABOUT; ?>">About</a></li>
+								<li>
+									<a type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+										How to buy coins
+									</a>
+
+									<div class="collapse" id="collapseExample">
+										<ul class="list-dash">
+											<li><a target="_blank" href="https://blockchain.com">Blockchain</a></li>
+											<li><a target="_blank" href="https://coinmama.com">Coin mama</a></li>
+										</ul>
+									</div>
+								</li>
 								<li><a href="<?= Q_GUIDE; ?>">question guide</a></li>
-								<li><a href="#">Contact us</a></li>
+								<li><a href="<?= CONTACT; ?>">Contact us</a></li>
 							</ul>
 						</div>
 						<div class="col-6 col-sm-6 col-lg-4">
