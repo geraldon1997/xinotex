@@ -12,7 +12,7 @@ define('APP_URL', 'http://xinotex.test/');
 define('ASSETS', APP_URL.'assets/');
 define('HOME', '/');
 define('ABOUT', '/page/about');
-define("WHY_US", "/page/whyus");
+define("TERMS", "/page/terms");
 define("CONTACT", "/page/contact");
 define('SIGNUP', '/user/create');
 define("REGISTER", "/user/store");
@@ -27,7 +27,7 @@ define('REFERRALS', '/user/referrals');
 define('ACTIVE_MEMBERS', '/user/activemembers');
 define('MODERATORS', '/user/moderators');
 define('INACTIVE_MEMBERS', '/user/inactivemembers');
-define('BONUS', '/user/bonus');
+define('Q_GUIDE', '/page/questionguide');
 define("LOGIN", "/user/login");
 
 if (isset($_SESSION['email'])) {

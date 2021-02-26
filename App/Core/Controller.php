@@ -47,13 +47,13 @@ class Controller
             'wapspeed',
             'team',
             'app',
-            'why_us',
+            'terms',
             'register',
             'signin',
             'forgotpassword',
             'resetpassword',
             'verifyuser',
-            'paper',
+            'qguide',
             'contact'
         ]
     ];

@@ -55,19 +55,27 @@
 							<a class="nav-link" href="<?= APP_URL; ?>">Homepage</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">About</a>
+							<a class="nav-link" href="<?= ABOUT; ?>">About</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">How to buy coins</a>
+							<a class="nav-link d-toggle" href="#">How to buy coins</a>
+							<ul class="nav-dropdown">
+								<li class="nav-dropdown-item">
+									<a href="https://blockchain.com" target="_blank" class="nav-dropdown-link">Blockchain</a>
+								</li>
+								<li class="nav-dropdown-item">
+									<a href="https://coinmama.com" target="_blank" class="nav-dropdown-link">Coin mama</a>
+								</li>
+							</ul>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Question Guide</a>
+							<a class="nav-link" href="<?= Q_GUIDE; ?>">Question Guide</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">Terms of service</a>
+							<a class="nav-link" href="<?= TERMS; ?>">Terms of service</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" href="#">contact us</a>
+							<a class="nav-link" href="<?= CONTACT; ?>">contact us</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="<?= SIGNIN; ?>">Login</a>
@@ -106,17 +114,16 @@
 							<h6 class="font-small font-weight-normal uppercase">Useful Links</h6>
 							<ul class="list-dash">
 								<li><a href="<?= ABOUT; ?>">About</a></li>
-								<li><a href="#">How to buy coins</a></li>
-								<li><a href="#">question guide</a></li>
+								<li><a href="<?= Q_GUIDE; ?>">question guide</a></li>
 								<li><a href="#">Contact us</a></li>
 							</ul>
 						</div>
 						<div class="col-6 col-sm-6 col-lg-4">
 							<h6 class="font-small font-weight-normal uppercase">Contact Info</h6>
 							<ul class="list-unstyled">
-								<li>121 King St, Melbourne VIC 3000</li>
-								<li>contact@example.com</li>
-								<li>+(123) 456 789 01</li>
+								<li><i class="ti-map"></i> 89 Jacolite Street BRIGADOON WA 6069, Australia</li>
+								<li><a href="mailto:support@xinotex.com"><i class="ti-envelope"></i> support@xinotex.com</a></li>
+								<li><a href="tel:+13233642197"><i class="ti-mobile"></i> +1 323 3642 197</a></li>
 							</ul>
 						</div>
 					</div><!-- end row(1) -->

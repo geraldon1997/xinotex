@@ -1,39 +1,103 @@
-<div class="section c-onepage-about d-flex align-items-center">
-                <div class="container">
-                    <div class="o-about-us">
-                        <div class="row align-items-center">
-                            <div class="col-md-6">
-                                <div class="o-details-with-title text-left wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                                    <h2>About Us</h2>
-                                    <h4>A platform for Cryptocurrency/fiat exchange and shares</h4>
-                                    <p>
-                                    Hynet is a registered legal international investment company. The company was created by a group of qualified experts, professional bankers, traders and analysts who specialized in the stock, bond, futures, currencies, gold, silver and oil trading with having more than ten years of extensive practical experiences of combined personal skills, knowledge, talents and collective ambitions for success.
-We believe that superior investment performance is achieved through a skillful balance of three core attributes: knowledge, experience and adaptability.
-There is only one way to be on the cutting edge – commitment to innovation. We do our best to achieve a consistent increase in investment performance for our clients, and superior value-add. We appreciate our clients loyalty and value the relationships we build with each customer. No matter what country you come from, our professional managers will help you to choose the investment product that best fits your demands.
-Our managers are constantly working on implementing unique trading methods with the most advanced and effective trading technology, competitive services, high-quality performance, genuine practices, excellent customer support service and fund safety that allow us to work successfully on the market in a highly profitable way.
-Having many investment methods allows us to maintain a constant high interest rate for our clients. One of our strongest advantages over competitors is that we provide the utmost flexibility and the most important insurance on funds being invested with us. The company provides Risk- Free Investment products to global investors, which is a landmark for the company performance.
-                                    </p>
-                                </div>
-                                <!-- End of .o-details-with-title -->
-                            </div>
-                            <!-- End of .col-md-6 -->
-
-                            <div class="col-md-6">
-                                <div class="img-container wow fadeIn" style="visibility: visible; animation-name: fadeIn;">
-                                    <img src="<?= ASSETS; ?>main/images/about/video-img.jpg" alt="video image" class="img-fluid img-with-shadow img-round">
-                                    <a class="play-overlay video-popup" href="https://www.youtube.com/watch?v=RdtHX15sXiU">
-                                        <span>
-                                            <svg class="svg-inline--fa fa-play fa-w-14" aria-hidden="true" data-prefix="fas" data-icon="play" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" data-fa-i2svg=""><path fill="currentColor" d="M424.4 214.7L72.4 6.6C43.8-10.3 0 6.1 0 47.9V464c0 37.5 40.7 60.1 72.4 41.3l352-208c31.4-18.5 31.5-64.1 0-82.6z"></path></svg><!-- <i class="fas fa-play"></i> -->
-                                        </span>
-                                    </a>
-                                </div>
-                                <!-- End of .o-video-modal -->
-                            </div>
-                            <!-- End of .col-md-6 -->
-                        </div>
-                        <!-- End of .align-items-center -->
-                    </div>
-                    <!-- End of .o-about-us -->
-                </div>
-                <!-- End of .container -->
+<hr>
+<!-- About section -->
+<div class="section padding-top-0">
+    <div class="container">
+        <div class="row align-items-center col-spacing-50">
+            <div class="col-12 col-lg-6">
+                <img class="box-shadow" src="<?= ASSETS; ?>main/images/corporate-clean-gallery-1.jpg" alt="">
             </div>
+            <div class="col-12 col-lg-6">
+                <h3 class="font-weight-light margin-bottom-20">We're a premier asset investment management firm, focused on delivering unique insight and partnership for the most sophisticated global investors.</h3>
+                <p>We maintain a long-term focus with a strategic investment horizon, conduct our own research, and employ a rigorous price discipline. Our approach is research-intensive; decisions are based on individual company analysis by our team of investment professionals.</p>
+                <a class="button button-lg button-radius button-reveal-right-dark margin-top-30" href="#"><i class="ti-arrow-right"></i><span>Learn More</span></a>
+            </div>
+        </div>
+    </div><!-- end container -->
+</div>
+<!-- end About section -->
+
+<!-- Progress bars -->
+<div class="section padding-top-0">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="progress-box">
+                    <h6 class="font-small font-weight-normal uppercase">PREMIER ASSET INVESTMENT MANAGEMENT FIRM.</h6>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+                            <span>90%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="progress-box">
+                    <h6 class="font-small font-weight-normal uppercase">BALANCED ACCOUNTS TO PROVIDE REGULAR INCOME.</h6>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                            <span>100%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-4">
+                <div class="progress-box">
+                    <h6 class="font-small font-weight-normal uppercase">COMPETITIVE EDGE, WORKPLACE CULTURE.</h6>
+                    <br>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                            <span>75%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>					
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div>
+<!-- end Progress bars -->
+
+		<!-- Services section -->
+		<div class="section">
+			<div class="container">
+				<div class="row icon-5xl text-center">
+					<div class="col-12 col-md-4">
+						<i class="ti-star text-dark"></i>
+						<h5 class="font-weight-normal margin-top-20">Built on active management</h5>
+						<p>Talented investors working within a risk management framework to pursue excellent performance over market cycles.</p>
+					</div>
+					<div class="col-12 col-md-4">
+						<i class="ti-blackboard text-dark"></i>
+						<h5 class="font-weight-normal margin-top-20">Culture to better serve investors</h5>
+						<p>Supporting and facilitating an environment that embraces our differences and respects our individual uniqueness.</p>
+					</div>
+					<div class="col-12 col-md-4">
+						<i class="ti-comment-alt text-dark"></i>
+						<h5 class="font-weight-normal margin-top-20">Highest level of service</h5>
+						<p>Skilled and motivated professionals serving investors, financial professionals, and consultants.</p>
+					</div>
+				</div><!-- end row -->
+			</div>
+		
+			<div class="container">
+				<div class="row icon-5xl text-center">
+					<div class="col-12 col-md-4">
+						<i class="ti-key text-dark"></i>
+						<h5 class="font-weight-normal margin-top-20">Dedicated to performance</h5>
+						<p>Navigating a competitive industry landscape with experience and a long-term vision of performance, efficiency, and accountability to investors and business partners.</p>
+					</div>
+					<div class="col-12 col-md-4">
+						<i class="ti-briefcase text-dark"></i>
+						<h5 class="font-weight-normal margin-top-20">Sustainable Approach, business and research</h5>
+						<p>Considering environmental, sustainability, and governance factors in operating our business and researching markets to invest in.</p>
+					</div>
+					<div class="col-12 col-md-4">
+						<i class="ti-face-smile text-dark"></i>
+						<h5 class="font-weight-normal margin-top-20">Objectified Attention</h5>
+						<p>Client's investment objectives, asset allocation, and portfolio holdings are reviewed with our experienced portfolio managers and client service associates.</p>
+					</div>
+				</div><!-- end row -->
+			</div><!-- end container -->
+		</div>
+		<!-- end Services section -->

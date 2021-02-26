@@ -21,14 +21,14 @@ class Page extends Controller
         return $this->view('about');
     }
 
-    public function whitepaper()
+    public function questionguide()
     {
-        return $this->view('white_paper');
+        return $this->view('qguide');
     }
 
-    public function plans()
+    public function terms()
     {
-        return $this->view('plans');
+        return $this->view('terms');
     }
 
     public function wapspeed()

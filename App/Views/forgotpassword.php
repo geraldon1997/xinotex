@@ -19,7 +19,7 @@
                                                 </div>
                                                 
                                                 <div class="col-md-12 text-center">
-                                                    <button type="submit" class="btn">Reset</button>
+                                                <button class="button button-lg button-rounded button-outline-dark-2" type="submit" >Send Password Reset Link</button>
                                                 </div>
 
                                             </div>
@@ -47,3 +47,47 @@
             <!-- End fo .container -->
         </div>
         <!-- End of .c-onepage-contact -->
+
+        <script>
+        $('form').submit((e) => {
+            e.preventDefault();
+
+            var formdata = $('form').serialize();
+
+            var btn = $('form button');
+            btn.prop({'disabled':'true'}).html('processing . . .');
+
+            $.ajax({
+                type : 'POST',
+                url : '/user/sendpasswordresetlink',
+                data : formdata,
+                success : (response) => {
+                    switch (response) {
+                        case 'ie':
+                            setTimeout(() => {
+                                btn.html('Invalid Email Address');
+                            }, 3000);
+                            
+                            setTimeout(() => {
+                                alert('Invalid Email Address');
+                                btn.removeAttr('disabled').html('Send Password Reset Link');
+                            }, 6000);
+                            break;
+
+                        case 'prls':
+                            setTimeout(() => {
+                                btn.html('email address confirmed');
+                            }, 3000);
+                            setTimeout(() => {
+                                alert('A password reset link has been sent to your email. \n please check your spam if not found inbox and move it to inbox');
+                                window.location = "<?= SIGNIN; ?>";
+                            }, 6000);
+                            break;
+                    
+                        default:
+                            break;
+                    }
+                }
+            });
+        });
+    </script>
