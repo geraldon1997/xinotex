@@ -21,7 +21,7 @@ class Investment extends Controller
     public function __construct()
     {
         $this->coinpayment = new CoinPaymentsAPI();
-        $this->coinpayment->Setup("Da54f01D974632F416eb3e1A9be48EBcB45a34D394abdb793633804ADA05C31c", "10df06d9ea2c3f042875066851d871763ca28a65a7b13e74b14f8c5c77c4b864");
+        $this->coinpayment->Setup("6152d408BAEC3dd949748514F9D3A9378C25f25AED0Abb96fa8105345aE49523", "7bc7e4ed54f7bfbc49abffd4814b3cb0fbc812b4827090de136c5cdcbe23219f");
         $basicinfo = $this->coinpayment->GetBasicProfile();
 
         $this->coinpaymentusername = $basicinfo['result']['public_name'];
@@ -185,7 +185,7 @@ class Investment extends Controller
                 'buyer_email' => $_SESSION['email'],
                 'item' => $inv_id,
                 'address' => "",
-                'ipn_url' => "https://hynetcapital.com/investment/webhook"
+                'ipn_url' => "https://xinotex.com/investment/webhook"
             ];
     
             $result = $this->coinpayment->CreateTransaction($request);
@@ -228,9 +228,9 @@ class Investment extends Controller
 
     public function webhook()
     {
-        $merchant_id = "2b19dff3edb62a13dbec39a95cd3dc4b";
+        $merchant_id = "456270b2f9257634bd03fb1b8d75aa67";
         $ipn_secret = '!@#$%Odogwu';
-        $debug_email = "dominusinferi@yahoo.com";
+        $debug_email = "maxgomery931@gmail.com";
         $txn_id = $_POST['txn_id'];
         
         $payments = Payment::findSingle(Payment::$table, 'gateway_id', $txn_id);
