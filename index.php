@@ -22,6 +22,7 @@ define('FORGOT_PASSWORD', '/user/forgotpassword');
 define('RESET_PASSWORD', '/user/resetpassword');
 define('PROFILE', '/user/profile');
 define('DASHBOARD', '/user/dashboard');
+define("SEND_CONTACT", "/page/sendContact");
 
 define('REFERRALS', '/user/referrals');
 define('ACTIVE_MEMBERS', '/user/activemembers');

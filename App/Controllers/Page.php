@@ -31,35 +31,34 @@ class Page extends Controller
         return $this->view('terms');
     }
 
-    public function wapspeed()
-    {
-        return $this->view('wapspeed');
-    }
-
-    public function team()
-    {
-        return $this->view('team');
-    }
-
-    public function app()
-    {
-        return $this->view('app');
-    }
-
-    public function whyus()
-    {
-        return $this->view('why_us');
-    }
-
     public function contact()
     {
         return $this->view('contact');
     }
 
-    public function dbseeder()
+    public function sendContact()
     {
-        $mail = new Mail;
-        $template = $mail->template('verify');
-        return $mail->inject($template, 'BTC', 'welcome to [site_title]', 'mosco@email.com', '<a class="btn btn-primary" href="[link]">verify</a>', 'https://google.com');
+        $name = $_POST['name'];
+        $email = $_POST['email'];
+        $subject = $_POST['subject'];
+        $message = $_POST['message'];
+
+        $body = "<p><b>Name :</b> $name</p>";
+        $body .= "<p><b>Email :</b> $email</p>";
+        $body .= "<p><b>message :</b> <br>$message</p>";
+
+        $headers  = 'MIME-Version: 1.0' . "\r\n";
+        $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+        $headers .= 'From: '.$email."\r\n".
+                    'Reply-To: '.$email."\r\n" .
+                    'X-Mailer: PHP/' . phpversion();
+
+        $send = mail('support@xinotex.com', $subject, $body, $headers);
+
+        if ($send) {
+            return 'sent';
+        } else {
+            return 'not sent';
+        }
     }
 }
