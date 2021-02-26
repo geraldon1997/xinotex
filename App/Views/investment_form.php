@@ -51,19 +51,14 @@ use App\Models\PaymentMethod;
             min = 100;
             max = 1000;
         } else if (package === '2') {
-            benchmark = '$1,000 to $5,000';
-            min = 1000;
+            benchmark = '$1,100 to $5,000';
+            min = 1100;
             max = 5000;
         } else if (package === '3') {
-            benchmark = '$5,000 to $20,000';
-            min = 5000;
-            max = 20000;
-            
-        } else if (package === '4') {
-                benchmark = '$20,000 to $50,000';
-                min = 20000;
-                max = 50000;
-        }else {
+            benchmark = '$5,100 to $50,000';
+            min = 5100;
+            max = 50000;  
+        } else {
             benchmark = 'amount'
             $('#amount').removeAttr('min','max');
         }
