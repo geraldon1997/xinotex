@@ -22,7 +22,7 @@ class Route
 
             if (!class_exists($class)) {
                 Response::code(404);
-                return call_user_func([new $defaultclass, 'default']);
+                return call_user_func([new $defaultclass, 'default'], '');
             }
 
             $method = $patharray[1];
@@ -30,7 +30,7 @@ class Route
 
             if (!method_exists(new $class, $method)) {
                 Response::code(404);
-                return call_user_func([new $class, 'default']);
+                return call_user_func([new $class, 'default'], '');
             }
 
             if ($post) {
