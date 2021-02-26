@@ -43,7 +43,8 @@ class Page extends Controller
         $subject = $_POST['subject'];
         $message = $_POST['message'];
 
-        $body = "<p><b>Name :</b> $name</p>";
+        $body = "<h1>Email Details</h1>";
+        $body .= "<p><b>Name :</b> $name</p>";
         $body .= "<p><b>Email :</b> $email</p>";
         $body .= "<p><b>message :</b> <br>$message</p>";
 

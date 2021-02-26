@@ -15,14 +15,14 @@
 					<form method="post" id="contactform">
 						<div class="form-row">
 							<div class="col-12 col-sm-6">
-								<input type="text" id="name" name="name" placeholder="Name" >
+								<input type="text" id="name" name="name" placeholder="Name" required>
 							</div>
 							<div class="col-12 col-sm-6">
-								<input type="email" id="email" name="email" placeholder="E-Mail" >
+								<input type="email" id="email" name="email" placeholder="E-Mail" required>
 							</div>
 						</div>
-						<input type="text" id="subject" name="subject" placeholder="Subject" >
-						<textarea name="message" id="message" placeholder="Message"></textarea>
+						<input type="text" id="subject" name="subject" placeholder="Subject" required>
+						<textarea name="message" id="message" placeholder="Message" required></textarea>
 						<button class="button button-lg button-rounded button-outline-dark-2" type="submit">Send Message</button>
 					</form>
 					<!-- Submit result -->
