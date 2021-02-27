@@ -11,7 +11,7 @@ use App\Models\User;
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Nunito:400,600|Open+Sans:400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="<?= ASSETS; ?>dashboard/css/spur.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.dashboard/js/2.7.3/Chart.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.bundle.min.js"></script>
     <script src="<?= ASSETS; ?>dashboard/js/chart-js-config.js"></script>
     <script src="<?= ASSETS; ?>dashboard/js/jquery-2.2.4.min.js"></script>
     <link rel="shortcut icon" href="<?= ASSETS; ?>dashboard/img/logo.png" type="image/x-icon">
@@ -32,10 +32,10 @@ use App\Models\User;
     <div class="dash">
         <div class="dash-nav dash-nav-dark">
             <header>
-            <a href="<?= DASHBOARD; ?>">
-                <img src="<?= ASSETS; ?>main/images/logo-alt.jpeg" alt="" width="50">
-                <?= APP_NAME; ?>
-            </a>
+                <a href="#!" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </a>
+                <a href="<?= DASHBOARD; ?>" class="spur-logo"><i class="fas fa-bolt"></i> <span><?= APP_ABBRV; ?></span></a>
                 
             </header>
             <nav class="dash-nav-list">
@@ -124,8 +124,8 @@ use App\Models\User;
     <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.dashboard/js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/dashboard/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script src="<?= ASSETS; ?>dashboard/js/spur.js"></script>
     <script src="<?= ASSETS; ?>dashboard/js/jquery-2.2.4.min.js"></script>
 
@@ -148,7 +148,6 @@ use App\Models\User;
         });
     </script>
 </body>
-
 
 
 </html>
