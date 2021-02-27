@@ -221,7 +221,7 @@
 						<h5 class="font-weight-normal margin-top-20">Beginner</h5>
 						<h4>2% Daily for 5 days</h4>
 						<h5>10% ROI</h5>
-						<p class="margin-bottom-10">minimum - $100</p>
+						<p class="margin-bottom-10">minimum - $500</p>
 						<p>maximum - $1,000</p>
 						<a href="<?= SIGNUP; ?>" class="button button-lg button-radius button-reveal-right-dark margin-top-30">invest now</a>
 					</div>

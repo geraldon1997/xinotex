@@ -47,8 +47,8 @@ use App\Models\PaymentMethod;
         var min, max;
 
         if (package === '1') {
-            benchmark = '$100 to $1,000';
-            min = 100;
+            benchmark = '$500 to $1,000';
+            min = 500;
             max = 1000;
         } else if (package === '2') {
             benchmark = '$1,100 to $5,000';
