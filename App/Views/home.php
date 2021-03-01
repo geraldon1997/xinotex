@@ -243,7 +243,7 @@
 						<h5 class="font-weight-normal margin-top-20">Premium</h5>
 						<h4>1.5% Daily for 30 days</h4>
 						<h5>45% ROI</h5>
-						<p class="margin-bottom-10">minimum - $5,100</p>
+						<p class="margin-bottom-10">minimum - $10,000</p>
 						<p>maximum - $50,000</p>
 						<a href="<?= SIGNUP; ?>" class="button button-lg button-radius button-reveal-right-dark margin-top-30">invest now</a>
 					</div>
